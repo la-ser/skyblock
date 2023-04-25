@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="header.css" />
+    <title>Document</title>
+  </head>
+  <style>
+    ::-webkit-scrollbar {
+      width: 1px;
+    }
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+      background-color: rgb(31, 31, 31);
+      overflow-x: hidden;
+    }
+
+    iframe {
+      bottom: 0;
+      position: absolute;
+      width: 100vw;
+      height: 90vh;
+    }
+
+    div#header {
+      position: absolute;
+      width: 100vw;
+      height: 10vh;
+      background-color: gray;
+      display: flex;
+      align-items: center;
+    }
+
+    div#header a {
+      margin-left: 10px;
+      margin-right: 10px;
+      font-size: 5vh;
+      text-decoration: none;
+    }
+
+    div#header div#header-right {
+      float: right;
+    }
+  </style>
+  <body>
+    <div id="header">
+      <a draggable="false" id="logo">Unknown Games</a>
+      <div id="header-right">
+        <a draggable="false" href="#random" onclick="randomGame()"
+          >Random Game</a
+        >
+        <a draggable="false" href="home" id="home">Home</a>
+      </div>
+    </div>
+    <iframe src="https://la-ser.github.io" frameborder="0"></iframe>
+  </body>
+</html>
+<script></script>
